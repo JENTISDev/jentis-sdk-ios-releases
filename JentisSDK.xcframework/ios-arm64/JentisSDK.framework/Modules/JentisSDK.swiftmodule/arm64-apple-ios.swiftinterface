@@ -148,7 +148,8 @@ public struct ConsentModel : Swift.Codable {
 public enum CodableValue : Swift.Codable, Swift.Equatable {
   case string(Swift.String)
   case bool(Swift.Bool)
-  case number(Swift.Double)
+  case integer(Swift.Int)
+  case decimalNumber(Swift.Double)
   case array([JentisSDK.CodableValue])
   public init(from decoder: any Swift.Decoder) throws
   public func encode(to encoder: any Swift.Encoder) throws
