@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name JentisSDK
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name JentisSDK
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import CoreTelephony
 import Foundation
 @_exported import JentisSDK
@@ -32,13 +33,21 @@ public struct ConsentModel : Swift.Codable {
       case type, timestamp
       case navigatorUserAgent
       case initiator
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(rawValue: Swift.String)
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(stringValue: Swift.String)
+      #endif
+      #if compiler(>=5.3) && $NonescapableTypes
       public init?(intValue: Swift.Int)
+      #endif
       public typealias RawValue = Swift.String
+      #if compiler(>=5.3) && $NonescapableTypes
       public var intValue: Swift.Int? {
         get
       }
+      #endif
       public var rawValue: Swift.String {
         get
       }
@@ -102,8 +111,12 @@ public struct ConsentModel : Swift.Codable {
   public static func endSession()
   public static func setLastActiveTimestamp(_ timestamp: Foundation.TimeInterval)
   public static func getLastActiveTimestamp() -> Foundation.TimeInterval
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func setCurrentSessionID(_ sessionID: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getCurrentSessionID() -> Swift.String?
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class TrackingSettings {
@@ -120,21 +133,29 @@ public struct ConsentModel : Swift.Codable {
   public var environment: JentisSDK.TrackConfig.Environment {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var version: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var debugCode: Swift.String? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public var sessionTimeoutInSeconds: Foundation.TimeInterval? {
     get
   }
+  #endif
   public var authorizationToken: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var customProtocol: Swift.String? {
     get
   }
+  #endif
   public var enableOfflineTracking: Swift.Bool {
     get
   }
@@ -160,14 +181,23 @@ public enum CodableValue : Swift.Codable, Swift.Equatable {
     get throws
   }
   public static func resetInstance()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
   public func setConsents(_ vendorConsents: [Swift.String : JentisSDK.ConsentStatus]) async -> Swift.Result<Swift.Bool, any Swift.Error>
+  #endif
   @objc deinit
 }
 extension JentisSDK.TrackingService {
   public func push(_ customProperties: [Swift.String : Any])
-  public func submit(skipAddingSubmitCommand: Swift.Bool = false, _ customInitiator: Swift.String? = nil) async throws
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func submit(_ customInitiator: Swift.String? = nil) async throws
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func addEnrichment(pluginId: Swift.String? = nil, arguments: [Swift.String : Any], variables: [Swift.String])
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func addCustomEnrichment(pluginId: Swift.String? = nil, arguments: [Swift.String : JentisSDK.CodableValue], variables: [Swift.String])
+  #endif
   public func addToCart(_ customProperties: [Swift.String : Any]) async throws
 }
 @_hasMissingDesignatedInitializers public class TimestampUtility {
@@ -182,7 +212,9 @@ public enum LogLevel : Swift.Int {
   case critical
   case performance
   case none
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -196,7 +228,9 @@ extension JentisSDK.LogLevel : Swift.CustomStringConvertible {
 public enum Action : Swift.String {
   case new
   case update
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -210,13 +244,21 @@ public enum ConsentStatus : Swift.Codable {
     case allow
     case deny
     case ncm
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(stringValue: Swift.String)
+    #endif
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(intValue: Swift.Int)
+    #endif
     public typealias RawValue = Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
     public var intValue: Swift.Int? {
       get
     }
+    #endif
     public var rawValue: Swift.String {
       get
     }
@@ -241,7 +283,9 @@ public enum ConsentStatus : Swift.Codable {
 public struct TrackConfig : Swift.Codable {
   public enum Environment : Swift.String, Swift.CaseIterable, Swift.Codable {
     case live, stage
+    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
+    #endif
     public typealias AllCases = [JentisSDK.TrackConfig.Environment]
     public typealias RawValue = Swift.String
     nonisolated public static var allCases: [JentisSDK.TrackConfig.Environment] {
@@ -261,7 +305,9 @@ public struct TrackConfig : Swift.Codable {
   public var customProtocol: Swift.String?
   public let enableOfflineTracking: Swift.Bool
   public let offlineTrackingTimeout: Foundation.TimeInterval
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(trackDomain: Swift.String, container: Swift.String, environment: JentisSDK.TrackConfig.Environment, version: Swift.String? = nil, debugCode: Swift.String? = nil, sessionTimeoutInSeconds: Foundation.TimeInterval? = nil, authorizationToken: Swift.String = "", customProtocol: Swift.String? = nil, enableOfflineTracking: Swift.Bool = false, offlineTrackingTimeout: Foundation.TimeInterval = 3600)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
