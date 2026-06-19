@@ -18,8 +18,8 @@ JentisSDK is a robust iOS SDK designed to facilitate app tracking to Jentis. Thi
    - [Add to Cart](#add-to-cart)
    - [Configuring Log Level](#configuring-log-level)
 4. [TrackConfig Details](#trackconfig-details)
-4. [Offline Mode](#offline-mode)
-5. [License](#license)
+5. [Offline Mode](#offline-mode)
+6. [License](#license)
 
 ---
 
@@ -68,12 +68,19 @@ struct MyApp: App {
 ## Usage
 
 ### Setting User Consents
-Set user consents for different vendors:
+Set user consents for different vendors. `setConsents` is `async` and returns a `Result`:
 ```swift
-TrackingService.shared.setConsents([
+let result = await TrackingService.shared.setConsents([
     "googleanalytics": .allow,
     "facebook": .deny
 ])
+
+switch result {
+case .success:
+    print("Consents updated")
+case .failure(let error):
+    print("Failed to update consents: \(error)")
+}
 ```
 
 ### Tracking Custom Events
@@ -106,15 +113,15 @@ TrackingService.shared.addEnrichment(
 ```
 
 ### Adding Custom Enrichments
-Add custom enrichments to tracking payloads:
+Add custom enrichments to tracking payloads. `arguments` is `[String: CodableValue]`, so wrap values in the matching case (`.string`, `.bool`, `.integer`, `.decimalNumber`, `.array`):
 ```swift
 TrackingService.shared.addCustomEnrichment(
    pluginId: "enrichment_xxxlprodfeed",
    arguments: [
-       "account": "JENTIS TEST ACCOUNT",
-       "page_title": "MY PAGE TITLE",
-       "productId": ["123", "ABC", "3"],
-       "baseProductId": ["1"]
+       "account": .string("JENTIS TEST ACCOUNT"),
+       "page_title": .string("MY PAGE TITLE"),
+       "productId": .array([.string("123"), .string("ABC"), .string("3")]),
+       "baseProductId": .array([.string("1")])
    ],
    variables: ["enrichment_product_variant"]
 )
@@ -154,10 +161,13 @@ The `TrackConfig` class manages the configuration of the SDK. Below are its prop
 | `trackDomain`         | `String`        | The destination domain for requests | Required    |
 | `container`           | `String`        | Container value from JENTIS DCP     | Required    |
 | `environment`         | `.live/.stage`  | Tracking environment                | `.stage`    |
-| `version`             | `String?`       | Optional version for debug          | `nil`       |
-| `debugCode`           | `String?`       | Optional debug code                 | `nil`       |
-| `authorizationToken`  | `String`        | Token for authorization             | `""`        |
-| `customProtocol`      | `String?`       | Custom protocol (e.g., `http`)      | `"https"`   |
+| `version`                | `String?`       | Optional version for debug          | `nil`       |
+| `debugCode`              | `String?`       | Optional debug code                 | `nil`       |
+| `sessionTimeoutInSeconds`| `TimeInterval?` | Session timeout in seconds          | `nil`       |
+| `authorizationToken`     | `String`        | Token for authorization             | `""`        |
+| `customProtocol`         | `String?`       | Custom protocol (e.g., `http`)      | `"https"`   |
+| `enableOfflineTracking`  | `Bool`          | Enable offline event caching        | `false`     |
+| `offlineTrackingTimeout` | `TimeInterval`  | Max cache age in seconds            | `3600`      |
 
 ---
 

@@ -1132,6 +1132,13 @@
                 "conformances": [
                   {
                     "kind": "Conformance",
+                    "name": "CodingKey",
+                    "printedName": "CodingKey",
+                    "usr": "s:s9CodingKeyP",
+                    "mangledName": "$ss9CodingKeyP"
+                  },
+                  {
+                    "kind": "Conformance",
                     "name": "Copyable",
                     "printedName": "Copyable",
                     "usr": "s:s8CopyableP",
@@ -1143,13 +1150,6 @@
                     "printedName": "Escapable",
                     "usr": "s:s9EscapableP",
                     "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
-                    "name": "Equatable",
-                    "printedName": "Equatable",
-                    "usr": "s:SQ",
-                    "mangledName": "$sSQ"
                   },
                   {
                     "kind": "Conformance",
@@ -1182,13 +1182,6 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "CodingKey",
-                    "printedName": "CodingKey",
-                    "usr": "s:s9CodingKeyP",
-                    "mangledName": "$ss9CodingKeyP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "CustomDebugStringConvertible",
                     "printedName": "CustomDebugStringConvertible",
                     "usr": "s:s28CustomDebugStringConvertibleP",
@@ -1207,6 +1200,13 @@
                     "printedName": "Sendable",
                     "usr": "s:s8SendableP",
                     "mangledName": "$ss8SendableP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Equatable",
+                    "printedName": "Equatable",
+                    "usr": "s:SQ",
+                    "mangledName": "$sSQ"
                   },
                   {
                     "kind": "Conformance",
@@ -1287,13 +1287,6 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -1305,6 +1298,13 @@
                 "printedName": "Encodable",
                 "usr": "s:SE",
                 "mangledName": "$sSE"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -1385,13 +1385,6 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -1403,6 +1396,13 @@
                 "printedName": "Encodable",
                 "usr": "s:SE",
                 "mangledName": "$sSE"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -1755,13 +1755,6 @@
                       },
                       {
                         "kind": "Conformance",
-                        "name": "Escapable",
-                        "printedName": "Escapable",
-                        "usr": "s:s9EscapableP",
-                        "mangledName": "$ss9EscapableP"
-                      },
-                      {
-                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -1773,6 +1766,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
                       }
                     ]
                   },
@@ -1939,13 +1939,6 @@
                       },
                       {
                         "kind": "Conformance",
-                        "name": "Escapable",
-                        "printedName": "Escapable",
-                        "usr": "s:s9EscapableP",
-                        "mangledName": "$ss9EscapableP"
-                      },
-                      {
-                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -1957,6 +1950,13 @@
                         "printedName": "Encodable",
                         "usr": "s:SE",
                         "mangledName": "$sSE"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
                       }
                     ]
                   },
@@ -2030,13 +2030,6 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Decodable",
                     "printedName": "Decodable",
                     "usr": "s:Se",
@@ -2048,6 +2041,13 @@
                     "printedName": "Encodable",
                     "usr": "s:SE",
                     "mangledName": "$sSE"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   }
                 ]
               },
@@ -2640,13 +2640,6 @@
                       },
                       {
                         "kind": "Conformance",
-                        "name": "Escapable",
-                        "printedName": "Escapable",
-                        "usr": "s:s9EscapableP",
-                        "mangledName": "$ss9EscapableP"
-                      },
-                      {
-                        "kind": "Conformance",
                         "name": "Decodable",
                         "printedName": "Decodable",
                         "usr": "s:Se",
@@ -2665,6 +2658,13 @@
                         "printedName": "Equatable",
                         "usr": "s:SQ",
                         "mangledName": "$sSQ"
+                      },
+                      {
+                        "kind": "Conformance",
+                        "name": "Escapable",
+                        "printedName": "Escapable",
+                        "usr": "s:s9EscapableP",
+                        "mangledName": "$ss9EscapableP"
                       }
                     ]
                   },
@@ -2738,13 +2738,6 @@
                   },
                   {
                     "kind": "Conformance",
-                    "name": "Escapable",
-                    "printedName": "Escapable",
-                    "usr": "s:s9EscapableP",
-                    "mangledName": "$ss9EscapableP"
-                  },
-                  {
-                    "kind": "Conformance",
                     "name": "Decodable",
                     "printedName": "Decodable",
                     "usr": "s:Se",
@@ -2756,6 +2749,13 @@
                     "printedName": "Encodable",
                     "usr": "s:SE",
                     "mangledName": "$sSE"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Escapable",
+                    "printedName": "Escapable",
+                    "usr": "s:s9EscapableP",
+                    "mangledName": "$ss9EscapableP"
                   }
                 ]
               },
@@ -2829,13 +2829,6 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Decodable",
                 "printedName": "Decodable",
                 "usr": "s:Se",
@@ -2847,6 +2840,13 @@
                 "printedName": "Encodable",
                 "usr": "s:SE",
                 "mangledName": "$sSE"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -2919,13 +2919,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -2937,6 +2930,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -4248,13 +4248,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -4273,6 +4266,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       },
@@ -5309,10 +5309,10 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -5320,6 +5320,13 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -5349,13 +5356,6 @@
             ],
             "usr": "s:SY",
             "mangledName": "$sSY"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
           }
         ]
       },
@@ -5557,17 +5557,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -6134,6 +6134,13 @@
             "conformances": [
               {
                 "kind": "Conformance",
+                "name": "CodingKey",
+                "printedName": "CodingKey",
+                "usr": "s:s9CodingKeyP",
+                "mangledName": "$ss9CodingKeyP"
+              },
+              {
+                "kind": "Conformance",
                 "name": "Copyable",
                 "printedName": "Copyable",
                 "usr": "s:s8CopyableP",
@@ -6145,13 +6152,6 @@
                 "printedName": "Escapable",
                 "usr": "s:s9EscapableP",
                 "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
               },
               {
                 "kind": "Conformance",
@@ -6184,13 +6184,6 @@
               },
               {
                 "kind": "Conformance",
-                "name": "CodingKey",
-                "printedName": "CodingKey",
-                "usr": "s:s9CodingKeyP",
-                "mangledName": "$ss9CodingKeyP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "CustomDebugStringConvertible",
                 "printedName": "CustomDebugStringConvertible",
                 "usr": "s:s28CustomDebugStringConvertibleP",
@@ -6209,6 +6202,13 @@
                 "printedName": "Sendable",
                 "usr": "s:s8SendableP",
                 "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
               },
               {
                 "kind": "Conformance",
@@ -6412,17 +6412,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
@@ -6801,13 +6801,6 @@
               },
               {
                 "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
                 "name": "Equatable",
                 "printedName": "Equatable",
                 "usr": "s:SQ",
@@ -6885,6 +6878,13 @@
                 "printedName": "Encodable",
                 "usr": "s:SE",
                 "mangledName": "$sSE"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
               }
             ]
           },
@@ -7641,13 +7641,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Decodable",
             "printedName": "Decodable",
             "usr": "s:Se",
@@ -7659,6 +7652,13 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
           }
         ]
       }
@@ -7924,6 +7924,27 @@
       "offset": 262,
       "length": 3,
       "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/e.pelesh\/Developer\/jentis-sdk-ios-app-example-internal\/jentis-sdk-ios\/JentisSDK\/Utilities\/UserAgentUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 465,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/e.pelesh\/Developer\/jentis-sdk-ios-app-example-internal\/jentis-sdk-ios\/JentisSDK\/Utilities\/UserAgentUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 530,
+      "length": 7,
+      "value": "\"1.0.0\""
+    },
+    {
+      "filePath": "\/Users\/e.pelesh\/Developer\/jentis-sdk-ios-app-example-internal\/jentis-sdk-ios\/JentisSDK\/Utilities\/UserAgentUtility.swift",
+      "kind": "StringLiteral",
+      "offset": 680,
+      "length": 6,
+      "value": "\"18.0\""
     },
     {
       "filePath": "\/Users\/e.pelesh\/Developer\/jentis-sdk-ios-app-example-internal\/jentis-sdk-ios\/JentisSDK\/Model\/MonitorPayload.swift",
