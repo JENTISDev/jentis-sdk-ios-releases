@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "JentisSDK",
-    defaultLocalization: "en",
-    platforms: [
-        .iOS(.v15)
-    ],
-    products: [
-        .library(
-            name: "JentisSDK",
-            targets: ["JentisSDK"])
-    ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-    ],
-    targets: [
-        .binaryTarget(
-            name: "JentisSDK",
-            path: "JentisSDK.xcframework"
-        )
-    ]
+    name: "JentisSDK",
+    defaultLocalization: "en",
+    platforms: [
+        .iOS(.v15)
+    ],
+    products: [
+        .library(
+            name: "JentisSDK",
+            targets: ["JentisSDK"])
+    ],
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+    ],
+    targets: [
+        .binaryTarget(
+            name: "JentisSDK",
+            path: "JentisSDK.xcframework"
+        )
+    ]
 )
